@@ -1,5 +1,6 @@
 class Admin::JobsController < ApplicationController
-  before_action :authenticate_user!, only: [:new, :create, :update, :edit, :destroy]
+    before_action :authenticate_user!, only: [:new, :create, :update, :edit, :destroy]
+    before_action :require_is_admin
 
   def show
     @job = Job.find(params[:id])
@@ -35,6 +36,7 @@ class Admin::JobsController < ApplicationController
       render :edit
     end
   end
+
 
   def destroy
     @job = Job.find(params[:id])
