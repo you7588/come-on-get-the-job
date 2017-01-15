@@ -6,6 +6,10 @@ class User < ApplicationRecord
     is_admin
   end
 
+    has_many :resumes
+
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
+
+
 end
