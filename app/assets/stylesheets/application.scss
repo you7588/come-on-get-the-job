@@ -21,7 +21,7 @@
  @import "font-awesome";
 
  .jumbotron {
-   background-image:url('http://y.photo.qq.com/img?s=n0m7YMg0L&l=y.jpg');
+   background-image:url('https://cdn-images-1.medium.com/max/1200/1*T1M15AfFVaNvZWDvHlUOQA.jpeg');
    background-repeat: no-repeat;
    background-size: cover;
    padding-bottom: 110px;
@@ -37,15 +37,15 @@
  .slogan {
    margin-top: 10px;
    margin-bottom: 50px;
-   text-align: center;
-   color: white;
+   text-align: left;
+   color: black;
    top: 12px;
  }
 
  .lead {
    margin-bottom: 60px;
-   text-align: center;
-   color: white;
+   text-align: left;
+   color: black;
  }
 
  .caption {
@@ -56,6 +56,20 @@
 
  .thumbnail {
      border: 0 none;
-     box-shadow: none;
+     box-shadow: right;
      margin-top: 60px;
+ }
+ .custab{
+   border: 1px solid #ccc;
+
+   padding: 5px;
+   margin: 5% 0;
+   box-shadow: 3px 3px 2px #ccc;
+
+   transition: 0.5s;
+ }
+
+ .custab:hover{
+   box-shadow: 3px 3px 0px transparent;
+   transition: 0.5s;
  }
